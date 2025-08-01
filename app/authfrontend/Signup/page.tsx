@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTheme } from "@/app/context/theme-context";
 import Image from "next/image";
 import Link from "next/link";
-import Loginwithgitgoogle from '@/app/components/Loginwithgitggogle/page'
+import Loginwithgitgoogle from '@/app/components/Loginwithgitggogle/Loginwithgitgoogle.tsx'
 import Continue from "@/app/components/continuebutton/Continuebutton";
 import CustomInput from "@/app/components/CustomInput/CustomInput";
 

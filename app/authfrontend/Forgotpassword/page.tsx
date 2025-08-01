@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from "next/link";
 import icon from '@/public/images/icon.png';
 import Continue from "@/app/components/continuebutton/Continuebutton";
-import Loginwithgitgoogle from '@/app/components/Loginwithgitggogle/page'
+import Loginwithgitgoogle from '@/app/components/Loginwithgitggogle/Loginwithgitgoogle.tsx'
 
 export default function Forgotpassword() {
   const [email, setEmail] = useState("");

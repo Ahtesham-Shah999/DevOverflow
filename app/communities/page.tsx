@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { useTheme } from "@/app/context/theme-context";
-import TagSearchFilters from "../components/tagssearchfilter/tagssearchfilter";
-import USercard from "../components/usercard/card";
+import TagSearchFilters from "@/app/components/tagssearchfilter/tagssearchfilter";
+import UserCard from "@/app/components/usercard/card";
 
 export default function Communities() {
   const { darkMode } = useTheme();
@@ -15,7 +15,7 @@ export default function Communities() {
     >
       {/* Your content goes here */}
       <TagSearchFilters heading={"Communities"} placeholder={"Highest Reputation"} />
-      <USercard/>
+      <UserCard/>
     </div>
   );
 }
