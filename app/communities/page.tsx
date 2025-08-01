@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import Tagcard from "@/app/components/tagcard/tagcard";
 import { useTheme } from "@/app/context/theme-context";
 import TagSearchFilters from "../components/tagssearchfilter/tagssearchfilter";
-export default function Tags() {
+import USercard from "../components/usercard/card";
+
+export default function Communities() {
   const { darkMode } = useTheme();
 
   return (
@@ -13,8 +14,8 @@ export default function Tags() {
       } p-4`}
     >
       {/* Your content goes here */}
-      <TagSearchFilters heading={"Tags"} placeholder={"Search by title and tags"} />
-      <Tagcard/>
+      <TagSearchFilters heading={"Communities"} placeholder={"Highest Reputation"} />
+      <USercard/>
     </div>
   );
 }

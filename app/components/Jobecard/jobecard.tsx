@@ -24,7 +24,7 @@ export default function JobCard({
   salary,
   location,
   locationIcon = "/images/AU.png",
-  image = "/images/nopic.png",
+  image = "",
   link,
   darkMode,
 }: JobCardProps) {
@@ -43,7 +43,12 @@ export default function JobCard({
       }`}
     >
       <Image
-        src={image}
+src={
+  image ||
+  (darkMode
+    ? "/images/nopic.png"
+    : "/images/profilelight.png")
+}
         alt="Company Logo"
         width={48}
         height={48}

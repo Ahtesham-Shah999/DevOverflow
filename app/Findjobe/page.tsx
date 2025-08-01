@@ -28,6 +28,7 @@ export default function Jobe() {
             salary="80k - 100k"
             location="Melbourne, AU"
             link="/job/principal-salesforce-developer"
+            image="/images/avatar.png"
             darkMode={darkMode}
           />
           <Jobecard

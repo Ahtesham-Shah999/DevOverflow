@@ -3,6 +3,7 @@ import { useState } from "react";
 import Jobe from '@/app/Findjobe/page';
 import Homepage from '@/app/Home/page';
 import Tags from '@/app/tags/tags';
+import Communities from '@/app/communities/page';
 import {
   Home,
   Star,
@@ -140,7 +141,7 @@ const Sidebar = () => {
         </button>
       </div>
     </div>
-    
+      {activeItem === "Communities" && <Communities/>}
       {activeItem === "Home" && <Homepage />}
       {activeItem === "Find Jobs" && <Jobe />}
       {activeItem === "Tags" && <Tags />}
